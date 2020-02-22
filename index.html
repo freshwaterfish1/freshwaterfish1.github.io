@@ -6,6 +6,7 @@
     <title>Levente Nagy</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
     <style type="text/css">
 
       h2 {
@@ -36,29 +37,147 @@
 .title {
     color: #ffffff;
     font-size: 3rem;
+    font-family: roboto;
     font-weight: 600;
     line-height: 1.325;
 }
 
 .subtitle {
-    color: #4a4a4a;
+    color: rgb(12, 138, 119);
     font-size: 1.25rem;
-    font-weight: 400;
+    font-family: roboto;
+    font-weight: 500;
     line-height: 1.25;
 }
+
+
+#flow span {
+display: block;
+    width: 200vw;
+    height: 170vw;
+    position: absolute;
+    top: -165vw;
+    left: -50vw;
+    border-radius: 90vw;
+    opacity: 0.3;
+    z-index: 0;
+}
+.flow-1 {
+background: #007766;
+-webkit-animation: rotating 20s linear infinite;
+-moz-animation: rotating 20s linear infinite;
+-ms-animation: rotating 20s linear infinite;
+-o-animation: rotating 20s linear infinite;
+animation: rotating 20s linear infinite;
+}
+.flow-2 {
+background: #ffffff;
+position: absolute;
+-webkit-animation: rotating 15s linear infinite;
+-moz-animation: rotating 15s linear infinite;
+-ms-animation: rotating 15s linear infinite;
+-o-animation: rotating 15s linear infinite;
+animation: rotating 15s linear infinite;
+}
+.flow-3 {
+background: #00d1b2;
+position: absolute;
+-webkit-animation: rotating 7s linear infinite;
+-moz-animation: rotating 7s linear infinite;
+-ms-animation: rotating 7s linear infinite;
+-o-animation: rotating 7s linear infinite;
+animation: rotating 7s linear infinite;
+}
+@-webkit-keyframes rotating {
+from {
+-ms-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-webkit-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+to {
+-ms-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+@keyframes rotating {
+from {
+-ms-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-webkit-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+to {
+-ms-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+.rotating {
+-webkit-animation: rotating 2s linear infinite;
+-moz-animation: rotating 2s linear infinite;
+-ms-animation: rotating 2s linear infinite;
+-o-animation: rotating 2s linear infinite;
+animation: rotating 2s linear infinite;
+}
+.footer{
+background-color: #222831;
+color: lemonchiffon;
+}
+.footer p, strong
+{color: lemonchiffon}
+.footer a:hover
+{color: crimson;}
+.fa
+{color: lemonchiffon;
+    margin: 10px}
+
+::selection 
+{background-color:#DEF4FF}
+
+
 
     </style>
 
   </head>
   <body>
     <section class="section-top">
-      <div class="container">
+                      <div id="flow">
+            <span class="flow-1"></span>
+            <span class="flow-2"></span>
+            <span class="flow-3"></span>
+        </div>
+      <div class="container  ">
+
+
         <h1 class="title">
           Levente Nagy
         </h1>
         <p class="subtitle">
           Project Manager · Unity Dev · VR/AR Enthusiast
         </p>
+
+        <a href="https://www.linkedin.com/in/leventenagy-1/" class="button is-primary is-inverted is-outlined">
+          <span class="icon">
+            <i class="fa fa-at"></i>
+          </span>
+          <span>Email</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/leventenagy-1/" class="button is-primary is-inverted is-outlined">
+          <span class="icon">
+            <i class="fab fa-linkedin-in"></i>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+
       </div>
     </section>
     <section class="section">
@@ -72,7 +191,7 @@
       </div>
 </section>
       <section class="section">
-      <div class="container">
+      <div class="container ">
         <h2>
           Core Competencies
         </h2>
@@ -91,16 +210,47 @@
         <h3>
           Programs
         </h3>
+
+        <div class="tags are-medium">
+            <span class="tag">Unity</span>
+            <span class="tag">Unreal</span>
+            <span class="tag">Adobe Photoshop</span>
+            <span class="tag">After Effects</span>
+            <span class="tag">Wordpress</span>
+            <span class="tag">Microsoft Office</span>
+            <span class="tag">Adobe Illustrator</span>
+            <span class="tag">Cinema 4D</span>
+            <span class="tag">Fusion 360</span>
+            <span class="tag">Blender</span>
+            <span class="tag">Procreate</span>
+        </div>
+
+        <h3>
+          Certifications
+        </h3>
+        <p>
+          Certified ScrumMaster® (CSM®)
+        </p>
+        
+        <figure class="image is-128x128">
+          <a href="https://www.scrumalliance.org/community/profile/lnagy10">
+          <img src="https://raw.githubusercontent.com/freshwaterfish1/freshwaterfish1.github.io/master/images/seal-csm.png">
+        </a>
+        </figure>
+      </a>
+<!--
         <p>
           Unity / Unreal / Adobe Photoshop / After Effects / Wordpress / Microsoft Office (Word, Excel, PowerPoint, Outlook, Access, Publisher) / Adobe Illustrator /  Maya / Cinema 4D / Fusion 360 / Blender / Procreate / VR
         </p>
+-->
+
       </div>
     </section>
 
 
       <section class="section">
 
-      <div class="container">
+      <div class="container ">
 
       <div class="columns is-gapless is-multiline is-mobile">
         <div class="column ">
@@ -153,7 +303,7 @@
 
 <section class="section">
 
-      <div class="container">
+      <div class="container ">
 
       <div class="columns is-gapless is-multiline is-mobile">
         <div class="column ">
@@ -193,7 +343,7 @@ Revamped outdated and broken code to interact with new gameplay systems while al
 
       <section class="section">
 
-      <div class="container">
+      <div class="container ">
 
       <div class="columns is-gapless is-multiline is-mobile">
         <div class="column ">
@@ -234,7 +384,7 @@ Revamped outdated and broken code to interact with new gameplay systems while al
 
           <section class="section">
 
-      <div class="container">
+      <div class="container ">
 
       <div class="columns is-gapless is-multiline is-mobile">
         <div class="column ">
@@ -275,9 +425,9 @@ Revamped outdated and broken code to interact with new gameplay systems while al
 
 
 
-          <section class="section">
+          <section class="section is-large">
 
-      <div class="container">
+      <div class="container ">
 
       <div class="columns is-gapless is-multiline is-mobile">
         <div class="column ">

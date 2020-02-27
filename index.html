@@ -1,463 +1,427 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Levente Nagy</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
-    <style type="text/css">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Levente Nagy</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+      <script async type="text/javascript" src="https://bulmatemplates.github.io/bulma-templates/js/bulma.js">
+      </script>
+      <style type="text/css">
+         h2 {
+         color: #4a4a4a;
+         font-size: 1.5rem;
+         font-weight: 500;
+         line-height: 1.5rem;
+         }
+         h3 {
+         font-weight: 600;
+         font-size: 1.15rem;
+         }
+         li {
+         list-style-type: disc;
+         }
+         .section-top {
+         padding: 7rem 1.5rem;
+         background-color: #00d1b2;
+         }
+         .section {
+         padding: 2rem 1.5rem;
+         }
+         .title {
+         color: #ffffff;
+         font-size: 3rem;
+         font-family: roboto;
+         font-weight: 600;
+         line-height: 1.325;
+         text-shadow: 0px 0px 8px #1f8a7a;
+         }
+        .subtitle {
+         color: rgb(12, 138, 119);
+         font-size: 1.25rem;
+         font-family: roboto;
+         font-weight: 500;
+         line-height: 1.25;
+         text-shadow: 0px 0px 8px #09e0c0;
+         }
+         .is-theme {
+          background-color: transparent;
+          }
 
-      h2 {
-      color: #4a4a4a;
-      font-size: 1.5rem;
-      font-weight: 500;
-      line-height: 1.5rem;
-    }
-
-      h3 {
-      font-weight: 600;
-      font-size: 1.15rem;
-      }
-
-      li {
-    list-style-type: disc;
-    }
-
-.section-top {
-    padding: 7rem 1.5rem;
-    background-color: #00d1b2;
-}
-
-    .section {
-    padding: 2rem 1.5rem;
-}
-
-.title {
-    color: #ffffff;
-    font-size: 3rem;
-    font-family: roboto;
-    font-weight: 600;
-    line-height: 1.325;
-}
-
-.subtitle {
-    color: rgb(12, 138, 119);
-    font-size: 1.25rem;
-    font-family: roboto;
-    font-weight: 500;
-    line-height: 1.25;
-}
-
-
-#flow span {
-display: block;
-    width: 200vw;
-    height: 170vw;
-    position: absolute;
-    top: -165vw;
-    left: -50vw;
-    border-radius: 90vw;
-    opacity: 0.3;
-    z-index: 0;
-}
-.flow-1 {
-background: #007766;
--webkit-animation: rotating 20s linear infinite;
--moz-animation: rotating 20s linear infinite;
--ms-animation: rotating 20s linear infinite;
--o-animation: rotating 20s linear infinite;
-animation: rotating 20s linear infinite;
-}
-.flow-2 {
-background: #ffffff;
-position: absolute;
--webkit-animation: rotating 15s linear infinite;
--moz-animation: rotating 15s linear infinite;
--ms-animation: rotating 15s linear infinite;
--o-animation: rotating 15s linear infinite;
-animation: rotating 15s linear infinite;
-}
-.flow-3 {
-background: #00d1b2;
-position: absolute;
--webkit-animation: rotating 7s linear infinite;
--moz-animation: rotating 7s linear infinite;
--ms-animation: rotating 7s linear infinite;
--o-animation: rotating 7s linear infinite;
-animation: rotating 7s linear infinite;
-}
-@-webkit-keyframes rotating {
-from {
--ms-transform: rotate(0deg);
--moz-transform: rotate(0deg);
--webkit-transform: rotate(0deg);
--o-transform: rotate(0deg);
-transform: rotate(0deg);
-}
-to {
--ms-transform: rotate(360deg);
--moz-transform: rotate(360deg);
--webkit-transform: rotate(360deg);
--o-transform: rotate(360deg);
-transform: rotate(360deg);
-}
-}
-@keyframes rotating {
-from {
--ms-transform: rotate(0deg);
--moz-transform: rotate(0deg);
--webkit-transform: rotate(0deg);
--o-transform: rotate(0deg);
-transform: rotate(0deg);
-}
-to {
--ms-transform: rotate(360deg);
--moz-transform: rotate(360deg);
--webkit-transform: rotate(360deg);
--o-transform: rotate(360deg);
-transform: rotate(360deg);
-}
-}
-.rotating {
--webkit-animation: rotating 2s linear infinite;
--moz-animation: rotating 2s linear infinite;
--ms-animation: rotating 2s linear infinite;
--o-animation: rotating 2s linear infinite;
-animation: rotating 2s linear infinite;
+a.navbar-item {
+    color: white;
 }
 
+a.navbar-item:hover {
+    background-color: red;
+    color: blue;
+}
+
+a.button.is-text.white-button.navbar-item {
+    color: white;
+    text-shadow: 0px 0px 5px #0c8a77;
+}
+a.button.is-text.white-button.navbar-item:hover {
+    background-color: transparent;
+}
+        .container.item-padding {
+        padding: 30px 0px;
+        }
+         #flow span {
+         display: block;
+         width: 200vw;
+         height: 170vw;
+         position: absolute;
+         top: -165vw;
+         left: -50vw;
+         border-radius: 90vw;
+         opacity: 0.3;
+         z-index: 0;
+         }
+         .flow-1 {
+         background: #00bca0;
+         -webkit-animation: rotating 20s linear infinite;
+         -moz-animation: rotating 20s linear infinite;
+         -ms-animation: rotating 20s linear infinite;
+         -o-animation: rotating 20s linear infinite;
+         animation: rotating 20s linear infinite;
+         }
+         .flow-2 {
+         background: #1ad6ba;
+         position: absolute;
+         -webkit-animation: rotating 15s linear infinite;
+         -moz-animation: rotating 15s linear infinite;
+         -ms-animation: rotating 15s linear infinite;
+         -o-animation: rotating 15s linear infinite;
+         animation: rotating 15s linear infinite;
+         }
+         .flow-3 {
+         background: #00bca0;
+         position: absolute;
+         -webkit-animation: rotating 7s linear infinite;
+         -moz-animation: rotating 7s linear infinite;
+         -ms-animation: rotating 7s linear infinite;
+         -o-animation: rotating 7s linear infinite;
+         animation: rotating 7s linear infinite;
+         }
+         @-webkit-keyframes rotating {
+         from {
+         -ms-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
+         -webkit-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+         transform: rotate(0deg);
+         }
+         to {
+         -ms-transform: rotate(360deg);
+         -moz-transform: rotate(360deg);
+         -webkit-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+         transform: rotate(360deg);
+         }
+         }
+         @keyframes rotating {
+         from {
+         -ms-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
+         -webkit-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+         transform: rotate(0deg);
+         }
+         to {
+         -ms-transform: rotate(360deg);
+         -moz-transform: rotate(360deg);
+         -webkit-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+         transform: rotate(360deg);
+         }
+         }
+         .rotating {
+         -webkit-animation: rotating 2s linear infinite;
+         -moz-animation: rotating 2s linear infinite;
+         -ms-animation: rotating 2s linear infinite;
+         -o-animation: rotating 2s linear infinite;
+         animation: rotating 2s linear infinite;
+         }
+      </style>
+   </head>
+
+   <body>
+
+<nav class="navbar is-theme is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+<!--
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About</span>
+        </a>
+
+        <a class="navbar-item" href="#services">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span>Services</span>
+        </a>
+-->
+         <a class="button is-primary is-inverted is-outlined navbar-item" href="https://www.linkedin.com/in/leventenagy-1/" >
+            <span class="icon">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            <span>Resume</span>
+          </a>
+<!--
+        <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Portfolio</span>
+        </a>
+
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+-->
+      </div>
+    </div>
+  </nav>
 
 
-
-    </style>
-
-  </head>
-  <body>
-    <section class="section-top">
-                      <div id="flow">
+      <section class="section-top">
+         <div id="flow">
             <span class="flow-1"></span>
             <span class="flow-2"></span>
             <span class="flow-3"></span>
-        </div>
-      <div class="container  ">
+         </div>
+         <div class="container">
+            <h1 class="title">
+               Levente Nagy
+            </h1>
+            <p class="subtitle">
+               Project Manager · Unity Dev · VR/AR Enthusiast
+            </p>
 
-
-        <h1 class="title">
-          Levente Nagy
-        </h1>
-        <p class="subtitle">
-          Project Manager · Unity Dev · VR/AR Enthusiast
-        </p>
-
-        <a href="https://www.linkedin.com/in/leventenagy-1/" class="button is-primary is-inverted is-outlined">
-          <span class="icon">
+            <a href="https://www.linkedin.com/in/leventenagy-1/" class="button is-primary is-inverted is-outlined">
+            <span class="icon">
             <i class="fa fa-at"></i>
-          </span>
-          <span>Email</span>
-        </a>
+            </span>
+            <span>Email</span>
+            </a>
 
-        <a href="https://www.linkedin.com/in/leventenagy-1/" class="button is-primary is-inverted is-outlined">
-          <span class="icon">
+            <a href="https://www.linkedin.com/in/leventenagy-1/" class="button is-primary is-inverted is-outlined">
+            <span class="icon">
             <i class="fab fa-linkedin-in"></i>
-          </span>
-          <span>LinkedIn</span>
-        </a>
+            </span>
+            <span>LinkedIn</span>
+            </a>
+         </div>
+      </section>
 
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h2>
-          Skills
-        </h2>
-        <p>
-          Leadership | Game Design | Virtual Reality | Digital Photography | Project Management | Coding | Video Editing | Hardware  Software Prototyping | Graphic Design | Process Improvements | Web Design | Technical Skills | Team Leadership | ScrumMaster Certification - CSM : In Progress
-        </p>
-      </div>
-</section>
       <section class="section">
-      <div class="container ">
-        <h2>
-          Core Competencies
-        </h2>
-        <h3>
-          Web
-        </h3>
-        <p>
-          HTML 5 / CSS / Sass / Bootstrap /  jQuery / JavaScript / PHP
-        </p>
-        <h3>
-          Languages
-        </h3>
-        <p>
-          English, Hungarian
-        </p>
-        <h3>
-          Programs
-        </h3>
 
-        <div class="tags are-medium">
-            <span class="tag">Unity</span>
-            <span class="tag">Unreal</span>
-            <span class="tag">Adobe Photoshop</span>
-            <span class="tag">After Effects</span>
-            <span class="tag">Wordpress</span>
-            <span class="tag">Microsoft Office</span>
-            <span class="tag">Adobe Illustrator</span>
-            <span class="tag">Cinema 4D</span>
-            <span class="tag">Fusion 360</span>
-            <span class="tag">Blender</span>
-            <span class="tag">Procreate</span>
-        </div>
-
-        <h3>
-          Certifications
-        </h3>
-        <p>
-          Certified ScrumMaster® (CSM®)
-        </p>
-        
-        <figure class="image is-128x128">
-          <a href="https://www.scrumalliance.org/community/profile/lnagy10">
-          <img src="https://raw.githubusercontent.com/freshwaterfish1/freshwaterfish1.github.io/master/images/seal-csm.png">
-        </a>
-        </figure>
-      </a>
 <!--
-        <p>
-          Unity / Unreal / Adobe Photoshop / After Effects / Wordpress / Microsoft Office (Word, Excel, PowerPoint, Outlook, Access, Publisher) / Adobe Illustrator /  Maya / Cinema 4D / Fusion 360 / Blender / Procreate / VR
-        </p>
+        Keywords  Project Management | Game Design | Virtual Reality | Web Design | Coding | Video Editing | Prototyping | Graphic Design | Process Improvements | Digital Photography | Bootstrap
 -->
 
-      </div>
-    </section>
+
+         <div class="container item-padding">
+            <div class="columns is-gapless is-multiline is-mobile">
+               <div class="column ">
+                  <h2>
+                     <strong>Project Manager</strong>
+                  </h2>
+                  <h3>@ The Beamer | National Science Foundation</h3>
+               </div>
+               <div class="column is-one-third">
+                  <h3 class="is-pulled-right">2018 – Current</h3>
+               </div>
+            </div>
+            <ul class="content">
+              <li>Led the transition to an Agile based project management methodology, ensuring that deliverables were finished on time resulting in a 300% increase in task completion.</li>
+              <li>Managed and trained a rotating team of five interns, training them in Unity and C# best practices and guiding them to produce quality deliverables that exceed expectations.</li>
+              <li>Collaborated with educators and external stakeholders to identify and implement new features that align with educational goals without sacrificing gameplay.</li>
+              <li>Presented the game to over 1,000 students from Washington, DC Metro area schools during the 2019 ED Games Expo, leveraging in-depth product knowledge to answer questions and increase interest in the game.</li>
+
+            </ul>
+         </div>
+
+         <div class="container item-padding">
+            <div class="columns is-gapless is-multiline is-mobile">
+               <div class="column ">
+                  <h2>
+                     <strong>Game Programmer &amp; Lead Web Designer   </strong>
+                  </h2>
+                  <h3>@ The Beamer | National Science Foundation</h3>
+               </div>
+               <div class="column is-one-third">
+                  <h3 class="is-pulled-right">2017 – 2018</h3>
+               </div>
+            </div>
+            <ul class="content">
+              <li>Built a custom Wordpress website based on Bootstrap framework, using  PHP, CSS3, and HTML5 to create a final site that loads times 34x faster than the original.</li>
+              <li>Designed, wrote and optimized a tooltip system in C# that taught players both basic controls and more complex interactions between the games unique mechanics.</li>
+              <li>Conducted rigorous playtests of the game in order to collect valuable feedback from participants, translating insights into gameplay improvements.</li>
+
+            </ul>
+         </div>
+
+         <div class="container item-padding">
+            <div class="columns is-gapless is-multiline is-mobile">
+               <div class="column ">
+                  <h2>
+                     <strong>Lead Game Developer</strong>
+                  </h2>
+                  <h3>@ Texas A&amp;M University | Psychological research project</h3>
+               </div>
+               <div class="column is-one-third">
+                  <h3 class="is-pulled-right">2018</h3>
+               </div>
+            </div>
+            <ul class="content">
+               <li>
+                  Conceptualized five game ideas to support a research project that seeks to uncover unbiased game experience results from study participants. 
+               </li>
+               <li>
+                  Identified 20 genres as a poor fit for the project, while recommending others to project leaders.
+               </li>
+               <li>
+                  Built a game that automatically gathered and uploaded specific game metrics to an online spreadsheet, enabling researchers to test their hypothesis and create graphs from the dataset. 
+               </li>
+               <li>
+                  Executed within a tight 40-day deadline to produce a complete, thoroughly tested product on time and surpassing quality expectations. 
+               </li>
+            </ul>
+         </div>
+
+         <div class="container item-padding">
+            <div class="columns is-gapless is-multiline is-mobile">
+               <div class="column ">
+                  <h2>
+                     <strong>Lead Game Developer</strong>
+                  </h2>
+                  <h3>@ Optimal Learning Alliances | Research Project in Unity</h3>
+               </div>
+               <div class="column is-one-third">
+                  <h3 class="is-pulled-right">2016 - 2017</h3>
+               </div>
+            </div>
+            <ul class="content">
+               <li>
+                  Created a prototype for an innovative mobile app based on educational workbooks for grade-schoolers to secure funding for the primary project. 
+               </li>
+               <li>
+                  Performed within a continually evolving environment, adapting to meet altered client requirements and produce high-quality deliverables on time.
+               </li>
+               <li>
+                  Communicated with the client to establish and rewrite the project scope, as well as set milestone and budget requirements.
+               </li>
+               <li>
+                  Delivered programming, design, and UI insight to a 6-member team with a non-technical background.
+               </li>
+            </ul>
+         </div>
+<!--
+         <div class="container ">
+            <div class="columns is-gapless is-multiline is-mobile">
+               <div class="column ">
+                  <h2>
+                     <strong>Software Engineering &amp; Innovation Internship</strong>
+                  </h2>
+                  <h3>@ CIGNA</h3>
+               </div>
+               <div class="column is-one-third">
+                  <h3 class="is-pulled-right">
+                     2015
+                  </h3>
+               </div>
+            </div>
+            <ul class="content">
+               <li>
+                  Led a project to develop, edit, and produce three video summaries of existing Cigna applications and products using Adobe After Effects and Adobe Premiere. 
+               </li>
+               <li>
+                  Ensured the on-time completion of all requested features, even as the scope of the project shifted and target dates evolved.
+               </li>
+               <li>
+                  Optimized video creation by 40% due to streamlined workflow processes, as well as reusing animations and custom elements from the first video.
+               </li>
+            </ul>
+         </div>
+       -->
+
+         <div class="container">
+        <h2>
+           <strong>Project Manager</strong>
+        </h2>
+            <h3>
+               Expert
+            </h3>
+            <div class="tags are-medium">
+               <span class="tag">Adobe Photoshop</span>
+               <span class="tag">After Effects</span>
+               <span class="tag">Adobe Photoshop</span>
+               <span class="tag">Wordpress</span>
+               <span class="tag">HTML</span>
+               <span class="tag">CSS</span>
+            </div>
+
+            <h3>
+               Intermediate
+            </h3>
+            <div class="tags are-medium">
+               <span class="tag">JavaScript</span>
+               <span class="tag">jQuery</span>
+               <span class="tag">Python</span>
+            </div>
+
+            <h3>
+               Languages
+            </h3>
+            <div class="tags are-medium">
+               <span class="tag">English</span>
+               <span class="tag">Hungarian</span>
+            </div>
+
+            <h3>
+               Certifications
+            </h3>
+            <p>
+               Certified ScrumMaster® (CSM®)
+            </p>
+            <figure class="image is-128x128">
+               <a href="https://www.scrumalliance.org/community/profile/lnagy10">
+               <img src="https://raw.githubusercontent.com/freshwaterfish1/freshwaterfish1.github.io/master/images/seal-csm.png">
+               </a>
+            </figure>
+            </a>
+
+         </div>
 
 
-      <section class="section">
+      </section>
 
-      <div class="container ">
+      <footer class="footer">
+         <div class="content has-text-centered">
+            <p>
+               &copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>
+            </p>
+         </div>
+      </footer>
 
-      <div class="columns is-gapless is-multiline is-mobile">
-        <div class="column ">
-          <h2>
-            <strong>Associate Producer</strong>
-          </h2>
-          <h3>
-            @ The Beamer
-          </h3>
-        </div>
-        <div class="column is-one-third">
-          <h3 class="is-pulled-right">
-            2018 – Current
-          </h3>
-        </div>
-      </div>
-
-<ul class="content">
-        <li>
-          Spearhead the transition to a new online ticketing system to ensure no tasks are missed, new bugs are flagged, and all deadlines are met, while also generating a 300% boost in company productivity.
-        </li>
-
-        <li>
-          Conduct rigorous testing of the game’s software prior to public demos, troubleshooting and escalating issues to ensure a stable final product.
-        </li>
-
-        <li>
-          Manage and mentor a rotating team of five, high-performing interns, training them in best practices and guiding them to produce quality deliverables that exceed expectations.
-        </li>
-
-        <li>
-        Run playtests and collect valuable feedback from participants, translating insights into gameplay improvements that drive audience engagement and reduce system errors.
-        </li>
-
-        <li>
-        Partner with educators to design and integrate new features that align with educational goals without sacrificing gameplay.
-        </li>
-
-        <li>
-        Write and optimize C# code to introduce new features.
-        </li>
-
-        <li>
-        Demonstrate the game to 1K+ students from DC-area schools during the 2019 ED Games Expo, leveraging in-depth product knowledge to answer questions and increase interest in the game. 
-        </li>
-</ul>
-      </div>
-    </section>
-
-
-<section class="section">
-
-      <div class="container ">
-
-      <div class="columns is-gapless is-multiline is-mobile">
-        <div class="column ">
-          <h2>
-            <strong>Game Production Programmer + Web Designer</strong>
-          </h2>
-          <h3>
-            @ The Beamer
-          </h3>
-        </div>
-        <div class="column is-one-third">
-          <h3 class="is-pulled-right">
-            2017 – 2018
-          </h3>
-        </div>
-      </div>
-
-<ul class="content">
-        <li>
-Utilized C# to design and develop a tooltip system that taught players both basic controls and more complex interactions within the game environment. 
-        </li>
-
-        <li>
-Leveraged skills with PHP, CSS, and HTML5 to build a custom Wordpress website from the ground up, optimizing the final product to achieve load times 34 faster than the original. 
-
-        </li>
-
-        <li>
-Revamped outdated and broken code to interact with new gameplay systems while also ensuring older systems remain intact. 
-        </li>
-
-</ul>
-      </div>
-    </section>
-
-
-
-      <section class="section">
-
-      <div class="container ">
-
-      <div class="columns is-gapless is-multiline is-mobile">
-        <div class="column ">
-          <h2>
-            <strong>Independent Contractor</strong>
-          </h2>
-          <h3>
-            @ Texas A&amp;M University
-          </h3>
-        </div>
-        <div class="column is-one-third">
-          <h3 class="is-pulled-right">
-            2018
-          </h3>
-        </div>
-      </div>
-
-<ul class="content">
-        <li>
-          Conceptualized five game ideas to support a research project that seeks to uncover unbiased game experience results from study participants. 
-        </li>
-
-        <li>
-          Identified 20 genres as a poor fit for the project, while recommending others to project leaders.
-        </li>
-
-        <li>
-          Built a game that automatically gathered and uploaded specific game metrics to an online spreadsheet, enabling researchers to test their hypothesis and create graphs from the dataset. 
-        </li>
-
-        <li>
-        Executed within a tight 40-day deadline to produce a complete, thoroughly tested product on time and surpassing quality expectations. 
-        </li>
-
-</ul>
-      </div>
-    </section>
-
-          <section class="section">
-
-      <div class="container ">
-
-      <div class="columns is-gapless is-multiline is-mobile">
-        <div class="column ">
-          <h2>
-            <strong>Lead Prototyper</strong>
-          </h2>
-          <h3>
-            @ Optimal Learning Alliances
-          </h3>
-        </div>
-        <div class="column is-one-third">
-          <h3 class="is-pulled-right">
-            2016
-          </h3>
-        </div>
-      </div>
-
-<ul class="content">
-        <li>
-          Created a prototype for an innovative mobile app based on educational workbooks for grade-schoolers to secure funding for the primary project. 
-        </li>
-
-        <li>
-          Performed within a continually evolving environment, adapting to meet altered client requirements and produce high-quality deliverables on time.
-        </li>
-
-        <li>
-          Communicated with the client to establish and rewrite the project scope, as well as set milestone and budget requirements.
-        </li>
-
-        <li>
-        Delivered programming, design, and UI insight to a 6-member team with a non-technical background.
-        </li>
-
-</ul>
-      </div>
-    </section>
-
-
-
-          <section class="section is-large">
-
-      <div class="container ">
-
-      <div class="columns is-gapless is-multiline is-mobile">
-        <div class="column ">
-          <h2>
-            <strong>Software Engineering &amp; Innovation Internship</strong>
-          </h2>
-          <h3>
-            @ CIGNA
-          </h3>
-        </div>
-        <div class="column is-one-third">
-          <h3 class="is-pulled-right">
-            2015
-          </h3>
-        </div>
-      </div>
-
-<ul class="content">
-        <li>
-          Led a project to develop, edit, and produce three video summaries of existing Cigna applications and products using Adobe After Effects and Adobe Premiere. 
-        </li>
-
-        <li>
-          Ensured the on-time completion of all requested features, even as the scope of the project shifted and target dates evolved.
-        </li>
-
-        <li>
-          Optimized video creation by 40% due to streamlined workflow processes, as well as reusing animations and custom elements from the first video.
-        </li>
-
-</ul>
-      </div>
-    </section>
-
-
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-&copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>
-    </p>
-  </div>
-</footer>
-
-
-  </body>
+   </body>
 </html>
